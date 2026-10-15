@@ -48,7 +48,7 @@ The final model explains about 56% of the variation in price changes (R² = 0.56
 
 ## Data
 
-The scraped data are not included. The analysis notebook expects the output of the full run as `final.csv`.
+The final dataset (final.csv, 4,811 items with prices on 22 and 24 October 2025) is included, so 02_analysis.ipynb can be rerun. The raw html and API responses are not included.
 
 Python packages: `selenium`, `beautifulsoup4`, `pandas`, `numpy`, `duckdb`, `fastparquet`, `statsmodels`, `matplotlib`, `tqdm`. Chrome and a matching ChromeDriver are needed for the scraping.
 
