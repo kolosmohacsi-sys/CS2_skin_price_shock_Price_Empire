@@ -15,6 +15,8 @@ The data come from pricempire.com, a price aggregator that collects listings fro
 
 `test = True` runs the whole pipeline on a small sample (four listing pages, ten item pages) in a few minutes.
 
+The data were collected in October 2025. pricempire.com has changed its page layout since then, so the CSS selectors no longer match and the scraper does not run as it is; the notebook documents how the data were collected.
+
 ## Analysis (`02_analysis.ipynb`)
 
 **Dependent variable:** log change of a knife's price between 22 and 24 October 2025.
@@ -46,7 +48,7 @@ The final model explains about 56% of the variation in price changes (R² = 0.56
 
 ## Data
 
-The scraped data are not included. The notebooks reproduce them from the site; check the site's terms of use before running the full scrape. The analysis notebook expects the output of the full run as `final.csv`.
+The scraped data are not included. The analysis notebook expects the output of the full run as `final.csv`.
 
 Python packages: `selenium`, `beautifulsoup4`, `pandas`, `numpy`, `duckdb`, `fastparquet`, `statsmodels`, `matplotlib`, `tqdm`. Chrome and a matching ChromeDriver are needed for the scraping.
 
